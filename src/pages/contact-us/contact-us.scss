@@ -1,0 +1,92 @@
+@import '../../styles/color.scss';
+@import '../../styles/variables.scss';
+
+.contact-us-form {
+    width: auto;
+    height: auto;
+    align-self: center;
+    background-color: $pale-grey;
+    padding: $base * 10 $base * 20;
+    .contact-us-header {
+        font-size: 35px;
+        color: black;
+    }
+    .field {
+        width: 100%;
+        border: 0;
+        border-bottom: solid 3px #636161b7;
+        outline: none;
+        /* prevents textbox highlight in chrome */
+        margin-top: $base * 5;
+        margin-bottom: $base * 4;
+        font-size: 15px;
+        padding-top: $base * 3;
+        padding-bottom: $base * 3;
+        padding-left: $base * 3;
+        padding-right: $base * 30;
+        background-color: #f7f7f7;
+        text-align: left;
+    }
+    .field::-webkit-input-placeholder {
+        font-size: 20px;
+    }
+    .submit-button {
+        width: 50%;
+        height: 57px;
+        margin: 40.5px;
+        object-fit: contain;
+        border-radius: 10px;
+        background-color: #383737;
+    }
+    .submit-button:focus {
+        box-shadow: 0 0px black;
+    }
+}
+
+.contact-us-img {
+    width: 750px;
+    height: 600px;
+    object-fit: cover;
+}
+
+@media (max-width: 1880px) {
+    .contact-us-form {
+        padding: $base * 5 $base * 20 !important;
+    }
+}
+
+@media (max-width: 1500px) {
+    .contact-us-form {
+        padding: $base * 2 $base * 10 !important;
+    }
+}
+
+@media (max-width: 1440px) {
+    .desc-container {
+        .contact-us-img {
+            width: 500px;
+            height: 400px;
+        }
+        .contact-us-form {
+            padding: $base * 5 $base * 20;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .desc-container {
+        display: inline-block;
+        width: 100%;
+        padding: $base * 0;
+        .contact-us-img {
+            width: 100%;
+        }
+        .contact-us-form {
+            width: 100%;
+            padding: $base * 0.625 $base * 10;
+        }
+        .contact-us-header {
+            font-size: 25px;
+        }
+    }
+}

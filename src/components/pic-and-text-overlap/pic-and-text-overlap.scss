@@ -1,0 +1,77 @@
+@import '../../styles/color.scss';
+@import '../../styles/variables.scss';
+
+.desc-container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: $base * 20 $base * 0;
+    align-items: center;
+
+    .desc-img {
+        width: 750px;
+        height: 600px;
+        object-fit: cover;
+    }
+
+    .desc-block {
+        width: auto;
+        height: auto;
+        align-self: center;
+        background-color: $light-green;
+        padding: $base * 10 $base * 40;
+
+        .desc-header {
+            font-family: GrafolitaScript;
+            font-size: 60px;
+            font-weight: bold;
+            color: $white;
+        }
+
+        .desc-text {
+            color: $light-grey;
+            font-size: 20px;
+            line-height: $base * 7;
+            font-style: italic;
+        }
+    }
+}
+
+@media (max-width: 1880px) {
+    .desc-block {
+        padding: $base * 5 $base * 20 !important;
+    }
+}
+
+@media (max-width: 1500px) {
+    .desc-block {
+        padding: $base * 2 $base * 10 !important;
+    }
+}
+
+@media (max-width: 1440px) {
+    .desc-container {
+        .desc-img {
+            width: 500px;
+            height: 400px;
+        }
+        .desc-block {
+            padding: $base * 5 $base * 20;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .desc-container {
+        display: inline-block;
+        width: 100%;
+        padding: $base * 0;
+        .desc-img {
+            width: 100%;
+        }
+        .desc-block {
+            width: 100%;
+            padding: $base * 0.625 $base * 10;
+        }
+    }
+}

@@ -1,0 +1,26 @@
+@import '../../styles/color.scss';
+@import '../../styles/variables.scss';
+.resize-img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.img-container {
+    display: inline-block;
+    width: fit-content;
+    margin: 0 0 $base * 4 0 !important;
+}
+
+.card-normal-font {
+    font-size: 20px;
+    color: $light-grey;
+    margin: 5 0;
+}
+
+.card-special-font {
+    font-size: 20px;
+    color: $gold;
+    margin: 5 0;
+    font-style: italic;
+}

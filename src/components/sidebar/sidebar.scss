@@ -1,0 +1,30 @@
+@import '../../styles/color.scss';
+@import '../../styles/variables.scss';
+
+.sidebar-container {
+    width: 25%;
+    height: 100%;
+
+    .vline-text {
+        margin-top: $base * 5;
+        display: flex;
+        .vl {
+            border-left: 4px solid $light-green;
+            height: $base * 7;
+            margin-left: $base;
+        }
+
+        .text {
+            font-weight: bold;
+            color: $grey;
+            margin: $base * 0 $base * 4;
+        }
+    }
+}
+
+@media (max-width: 810px) {
+    .sidebar-container {
+        width: 100%;
+        text-align: center;
+    }
+}

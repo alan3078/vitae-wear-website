@@ -1,0 +1,8 @@
+@import '../../styles/color.scss';
+@import '../../styles/variables.scss';
+
+.headline {
+    width: 100%;
+    margin-top: $base * 10;
+    margin-bottom: $base * 20;
+}

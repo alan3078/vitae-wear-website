@@ -1,0 +1,17 @@
+@import '../../styles/color.scss';
+@import '../../styles/variables.scss';
+
+.products-container {
+    width: 100%;
+    text-align: center;
+}
+
+.sidebar-product-container {
+    display: flex;
+}
+
+@media (max-width: 810px) {
+    .sidebar-product-container {
+        display: inline;
+    }
+}

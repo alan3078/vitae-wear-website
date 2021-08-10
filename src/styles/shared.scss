@@ -1,0 +1,49 @@
+@import '../styles/color.scss';
+@import '../styles/variables.scss';
+
+.page-container {
+    padding: $base * 0 $base * 40;
+}
+
+.nav-text {
+    font-size: 20px;
+    color: $light-grey !important;
+    padding: $base * 0 $base * 5 !important;
+}
+
+.logo {
+    max-width: $base * 49;
+    max-height: $base * 19;
+    background-color: $light-green;
+}
+
+.sign-up-btn {
+    max-width: $base * 30;
+    max-height: $base * 8;
+    margin-right: $base;
+}
+
+.account-icon,
+.cart-icon {
+    max-width: $base * 7;
+    max-height: $base * 7;
+    margin: $base * 0 $base * 6;
+    cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+    .page-container {
+        padding: $base * 0 $base * 20;
+    }
+}
+
+@media (max-width: 992px) {
+    .account-icon,
+    .cart-icon {
+        margin: $base * 0 $base;
+    }
+
+    .page-container {
+        padding: $base * 0 $base * 0;
+    }
+}

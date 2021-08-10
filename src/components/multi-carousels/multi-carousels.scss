@@ -1,0 +1,21 @@
+@import '../../styles/color.scss';
+@import '../../styles/variables.scss';
+
+.multi-carousels-container {
+    display: inline-block;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: #808080 !important;
+}
+
+@media (max-width: 992px) {
+    .slick-slider {
+        display: inline-block !important;
+        width: 80%;
+    }
+}

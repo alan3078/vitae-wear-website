@@ -1,0 +1,41 @@
+@import '../../styles/color.scss';
+@import '../../styles/variables.scss';
+.arrow {
+    box-sizing: border-box;
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 4px;
+    margin-left: 37px;
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.line {
+    border-top: 2px solid black;
+}
+
+.invoice-count {
+    text-align: right;
+}
+
+.invoice-product-img {
+    width: 150px;
+    height: 150.7px;
+    display: flex;
+}
+
+.invoice-container {
+    font-weight: bold;
+    text-align: center;
+}
+
+.profile-save-button {
+    text-align: center;
+    justify-content: center;
+    margin: $base * 20 $base * 0;
+    align-items: center;
+}

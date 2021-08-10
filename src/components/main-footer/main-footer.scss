@@ -1,0 +1,63 @@
+@import '../../styles/color.scss';
+@import '../../styles/variables.scss';
+
+.footer-container {
+    height: auto;
+    text-align: center;
+    background-color: $light-green;
+    padding: $base * 12;
+    margin-top: $base * 20;
+}
+
+.icon-container {
+    width: 100%;
+    text-align: center;
+}
+
+.icon {
+    width: 27px;
+    height: 27px;
+    margin: 0 $base * 5;
+}
+
+.link-title {
+    font-weight: bold;
+}
+
+.footer-text {
+    font-size: 20px;
+    color: $light-grey;
+    padding-bottom: $base * 12;
+    text-decoration: none;
+}
+
+.terms-container {
+    display: flex;
+    justify-content: center;
+    margin-top: $base * 5;
+
+    .terms {
+        color: $light-grey;
+        text-decoration: none;
+    }
+}
+
+.vertical-line {
+    border-left: $base * 0.5 solid $light-grey;
+    height: $base * 8;
+    margin: $base * 0 $base * 4;
+}
+
+@media (max-width: 575px) {
+    .link-title {
+        display: none;
+    }
+
+    .footer-text {
+        padding: $base * 0;
+    }
+
+    .link-col {
+        margin-bottom: $base * 3;
+    }
+}

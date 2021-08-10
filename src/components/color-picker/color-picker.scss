@@ -1,0 +1,15 @@
+@import '../../styles/color.scss';
+@import '../../styles/variables.scss';
+
+.color-circle {
+    height: $base * 7;
+    width: $base * 7;
+    border-radius: 50%;
+    display: inline-block;
+    border: solid 1px #d8d8d8;
+    margin-right: $base * 5;
+}
+
+.color-text {
+    margin: $base * 4 0;
+}

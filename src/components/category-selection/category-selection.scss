@@ -1,0 +1,33 @@
+@import '../../styles/color.scss';
+@import '../../styles/variables.scss';
+
+.category-container {
+    margin-top: $base * 0;
+}
+
+.category-item {
+    display: flex;
+    align-items: center;
+    padding: $base * 4 $base * 0;
+    font-size: 20;
+    color: $grey;
+    cursor: pointer;
+
+    .item-text {
+        margin: $base * 0 $base * 4;
+    }
+}
+
+.dot {
+    height: $base * 3;
+    width: $base * 3;
+    background-color: $brown;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+@media (max-width: 810px) {
+    .category-container {
+        margin: $base * 10;
+    }
+}

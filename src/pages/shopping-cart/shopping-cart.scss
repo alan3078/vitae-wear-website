@@ -1,0 +1,48 @@
+@import '../../styles/color.scss';
+@import '../../styles/variables.scss';
+.continue-btn-container {
+    width: 100%;
+    cursor: pointer;
+    text-align: right;
+    margin: $base * 10 0;
+    .continue-btn-text {
+        font-size: 20px;
+        margin-left: $base * 2;
+        font-weight: bold;
+    }
+}
+
+.product-img {
+    width: 308px;
+    height: 309px;
+    object-fit: contain;
+}
+
+.cart-product {
+    display: flex;
+    align-items: center;
+}
+
+.cart-summary {
+    text-align: right;
+}
+
+.cart-submit-btn {
+    width: 200px;
+    height: 50px;
+    object-fit: contain;
+    background-color: #d9e5d1;
+    .cart-submit-text {
+        width: 60px;
+        height: 42px;
+        font-family: HelveticaNeue;
+        font-size: 20px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #fff;
+    }
+}

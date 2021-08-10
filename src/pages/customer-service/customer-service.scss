@@ -1,0 +1,14 @@
+@import '../../styles/color.scss';
+@import '../../styles/variables.scss';
+
+.customer-service {
+    .desc-container {
+        text-align: left;
+        .desc-block {
+            padding: $base * 10 $base * 20;
+            .desc-text {
+                font-style: normal;
+            }
+        }
+    }
+}
